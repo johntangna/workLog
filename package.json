@@ -1,0 +1,19 @@
+{
+    "uni-app": {
+        "scripts": {
+            "mp-dingtalk": {
+                "title": "微信小程序",
+                "env": {
+                    "UNI_PLATFORM": "mp-alipay"
+                },
+                "define": {
+                    "MP-DINGTALK": true
+                }
+            }
+        }
+    },
+    "dependencies": {
+        "sha1": "^1.1.1",
+        "vue-xss": "^1.0.4"
+    }
+}

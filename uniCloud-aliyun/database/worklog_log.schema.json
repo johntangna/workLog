@@ -1,0 +1,88 @@
+{
+	"bsonType": "object",
+	"required": ["_coolcode_log_employeeno", "_coolcode_log_employeename", "_coolcode_log_date", "_coolcode_log_on_duty",
+		"_coolcode_log_off_duty", "_coolcode_log_work_content", "_coolcode_log_work_timelength", "_coolcode_log_question"
+	],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"_coolcode_log_employeeno": {
+			"bsonType": "string",
+			"description": "工号",
+			"trim": "both"
+		},
+		"_coolcode_log_employeename": {
+			"bsonType": "string",
+			"description": "姓名",
+			"trim": "both"
+		},
+		"_coolcode_log_date": {
+			"bsonType": "timestamp",
+			"description": "日期",
+			"trim": "both"
+		},
+		"_coolcode_log_on_duty": {
+			"bsonType": "timestamp",
+			"description": "上班时间",
+			"trim": "both"
+		},
+		"_coolcode_log_off_duty": {
+			"bsonType": "timestamp",
+			"description": "下班时间",
+			"trim": "both"
+		},
+		"_coolcode_log_work_content": {
+			"bsonType": "string",
+			"description": "工作内容",
+			"trim": "both"
+		},
+		"_coolcode_log_work_timelength": {
+			"bsonType": "string",
+			"description": "工作时长",
+			"trim": "both"
+		},
+		"_coolcode_log_question": {
+			"bsonType": "string",
+			"description": "需协调的问题",
+			"trim": "both"
+		},
+		"_coolcode_log_audit_status": {
+			"bsonType": "string",
+			"description": "审核状态，不允许重复",
+			"label": "审核状态",
+			"trim": "both",
+			"enum": [{
+				"value": "0",
+				"text": "未审批"
+			}, {
+				"value": "1",
+				"text": "已审批"
+			}]
+		},
+		"_coolcode_log_audit_advice": {
+			"bsonType": "string",
+			"description": "审核意见，不允许重复",
+			"label": "审核意见",
+			"trim": "both",
+			"enum": [{
+				"value": "0",
+				"text": "审核未通过"
+			}, {
+				"value": "1",
+				"text": "审核已通过"
+			}]
+		},
+		"_coolcode_log_audit_comment": {
+			"bsonType": "string",
+			"description": "审核备注，不允许重复",
+			"trim" : "both"
+		}
+	}
+}
