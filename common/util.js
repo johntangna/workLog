@@ -66,8 +66,8 @@ var dateUtils = {
 	}
 };
 function isSpecialChar(s){
-	let regEn = /[`~!@#$^&*()_+<>?"{}.\/'[\]]/im
-	let regCn = /[·！#￥（——）“”‘、|《。》？、【】[\]]/im
+	let regEn = /[`~!@#$^&*()_+<>?"{}\/'[\]]/im
+	let regCn = /[！#￥（——）“”‘、|《》？、【】[\]]/im
 
 	if(regEn.test(s) || regCn.test(s)){
 		return true

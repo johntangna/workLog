@@ -35,8 +35,8 @@
 			return {
 				navText: "工号登录",
 				formData: {
-					username: "demo",
-					passwordSecret: "demo123"
+					username: "",
+					passwordSecret: ""
 				},
 				rules: {
 					username: {
