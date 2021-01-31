@@ -36,7 +36,7 @@
 					<uni-easyinput type="textarea" v-model="formData.workContent" placeholder="请输入工作内容"/>
 				</uni-forms-item>
 				<uni-forms-item label="工作时长" name="workTimeLength">
-					<uni-easyinput type="number" v-model="formData.workTimeLength" placeholder="请输入工作时长(小时)"/>
+					<uni-easyinput type="digit" v-model="formData.workTimeLength" placeholder="请输入工作时长(小时)"/>
 				</uni-forms-item>
 				<uni-forms-item label="需协调的问题" name="question">
 					<uni-easyinput type="textarea" v-model="formData.question" placeholder="请输入需协调的问题,没有请写'无'"/>
